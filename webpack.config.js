@@ -18,14 +18,18 @@ const config = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource'
             },
+            {
+                test: /\.html$/,
+                use: ['html-loader']
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: "index.html",
-            inject: "head",
-            scriptLoading: "defer" // speed up page time loading 
+            // filename: "index.html",
+            // inject: "head",
+            // scriptLoading: "defer" // speed up page time loading 
         })
     ],
     mode: "development"
