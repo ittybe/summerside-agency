@@ -21,13 +21,23 @@ body {
     background-repeat: no-repeat;
     
     padding-bottom: 300px;
-    
+    position: relative;
 }
 
+.arrow-down {
+    position: absolute;
+    bottom: 134px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
 .menu-bar {
     display: none;
 }
 
 .menu-sign {
     color: white;
+    font-size: larger;
 }
+
