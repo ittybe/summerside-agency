@@ -20,13 +20,15 @@ body {
     background-position: bottom;   
     background-repeat: no-repeat;
     
-    padding-bottom: 300px;
+    padding: 30px 20px 300px 20px;
+    
     position: relative;
 }
 
 .arrow-down {
     position: absolute;
-    bottom: 134px;
+    /* arrow  pointing into orange  */
+    bottom: 138px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -38,6 +40,36 @@ body {
 
 .menu-sign {
     color: white;
-    font-size: larger;
+    font-size: x-large;
 }
 
+.title {
+    font-family: var(--font-family-2);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-header{
+    color: var(--neutral-white);
+    font-weight: var(--font-weights-3);
+    font-size: 50px;
+
+    text-align: center;
+    margin-top: 70px;
+}
