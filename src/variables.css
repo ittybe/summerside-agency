@@ -22,4 +22,6 @@
     --font-weights-1: 600; 
     --font-weights-2: 700; 
     --font-weights-3: 900; 
+
+    --text-padding-sides: 20px;
 }
