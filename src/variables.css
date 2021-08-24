@@ -23,5 +23,7 @@
     --font-weights-2: 700; 
     --font-weights-3: 900; 
 
-    --text-padding-sides: 20px;
+    --text-padding-sides: 35px;
+    --section-padding-top-bottom: 60px;
+    --title-font-size: 35px;
 }
