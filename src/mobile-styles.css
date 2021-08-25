@@ -8,10 +8,6 @@ body {
     font-family: Helvetica Neue, Helvetica,Arial,sans-serif; ;
 }
 
-.section-wrapper {
-    width: 100%;
-    display: flex;
-}
 
 .sections-wrapper {
     width: 100%;
@@ -72,10 +68,21 @@ body {
 .bottom-header{
     color: var(--neutral-white);
     font-weight: var(--font-weights-3);
-    font-size: 50px;
+    font-size: 45px;
 
     text-align: center;
     margin-top: 70px;
+    letter-spacing: 0.1em;
+}
+
+/* text section styles */
+.section-wrapper {
+    /* width: 100%;  do not recomment because of this option 
+    this paticular class will overflow from main body and make this vertocal scroller */
+    display: flex;
+
+    padding-left: var(--text-padding-sides);
+    padding-right: var(--text-padding-sides);
 }
 
 .sections-wrapper {
@@ -103,6 +110,7 @@ body {
     color: var(--neutral-blue);
 
     margin-bottom: 30px;
+    
 }
 
 .text-section-wrapper .text{
@@ -118,4 +126,92 @@ body {
     font-size: larger;
 
     margin-top: 30px;
+}
+
+/* image text section styles */
+.image-text-section-wrapper{
+    padding-top: 400px;
+    background-size: cover;
+    background-position: top;   
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--section-padding-top-bottom);
+    text-align: center;
+}
+
+.image-text-section-wrapper .title {
+    font-size: x-large;
+    margin: 30px;
+}
+
+.image-text-section-wrapper .text {
+    line-height: 1.75em;
+    font-size: 16px;
+}
+
+.cherry {
+    background-image: url(./assets/mobile/image-graphic-design.jpg);
+}
+
+.cherry .title, .cherry .text {
+    color: var(--primary-cyan-text);
+}
+
+.orange {
+    background-image: url(./assets/mobile/image-photography.jpg);
+}
+
+.orange .title, .orange .text {
+    color: var(--primary-blue);
+}
+
+/* client testimonials */
+
+.client-testimonials {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--section-padding-top-bottom);
+    padding-bottom: var(--section-padding-top-bottom);
+}
+
+.client-testimonials>.title {
+    text-align: center;
+    color: var(--neutral-gray-3);
+    letter-spacing: 0.2em;
+    font-size: large;
+
+}
+
+.client-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: var(--section-padding-top-bottom);
+}
+
+.client-testimonial img {
+    border-radius: 50%;
+    margin: 10px;
+    width: 50%;
+}
+
+.client-testimonial .text {
+    line-height: 1.75em;
+    color: var(--neutral-gray-1);
+    margin: 15px;
+}
+
+.personal-info .title {
+    color: var(--neutral-blue);
+    margin: 10px;
+    font-size: large;
+}
+
+.personal-info .subtitle {
+    color: var(--neutral-gray-2);
+    font-size: 16px;
 }
