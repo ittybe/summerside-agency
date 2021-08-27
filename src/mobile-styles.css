@@ -78,7 +78,7 @@ body {
 /* text section styles */
 .section-wrapper {
     /* width: 100%;  do not recomment because of this option 
-    this paticular class will overflow from main body and make this vertocal scroller */
+    this paticular class will overflow from main body and make vertical scroller */
     display: flex;
 
     padding-left: var(--text-padding-sides);
@@ -107,6 +107,7 @@ body {
 
 .text-section-wrapper .title{
     font-size: var(--title-font-size);
+    font-weight: var(--font-weights-3);
     color: var(--neutral-blue);
 
     margin-bottom: 30px;
@@ -121,7 +122,7 @@ body {
 .text-section-wrapper a:link, .text-section-wrapper a:visited {
     color: var(--neutral-blue);
     font-family: var(--font-family-2);
-    font-weight: var(--font-weights-2);
+    font-weight: var(--font-weights-3);
     text-decoration: none;
     font-size: larger;
 
@@ -144,6 +145,7 @@ body {
 .image-text-section-wrapper .title {
     font-size: x-large;
     margin: 30px;
+    font-weight: var(--font-weights-3);
 }
 
 .image-text-section-wrapper .text {
@@ -179,9 +181,9 @@ body {
 .client-testimonials>.title {
     text-align: center;
     color: var(--neutral-gray-3);
-    letter-spacing: 0.2em;
-    font-size: large;
-
+    font-weight: var(--font-weights-2);
+    font-size: larger;
+    letter-spacing: 0.1em;
 }
 
 .client-testimonial {
@@ -214,4 +216,65 @@ body {
 .personal-info .subtitle {
     color: var(--neutral-gray-2);
     font-size: 16px;
+}
+
+/* gallery */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* relative square image */
+
+.gallery .image-wrapper{
+    position: relative;
+    width: 50%;
+}
+
+.gallery .image-wrapper:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.gallery .image-wrapper>img {
+    position: absolute; /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Make the picture taking the size of it's parent */
+    width: 100%; /* This if for the object-fit */
+    height: 100%; /* This if for the object-fit */
+    object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+}
+
+/* footer  */
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: var(--section-padding-top-bottom);
+    padding-bottom: var(--section-padding-top-bottom);
+
+    background-color: var(--primary-cyan-footer);
+    color: var(--primary-cyan-text);
+}
+
+.menu-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-wrapper a:link, .footer-wrapper a:visited {
+    color: var(--primary-cyan-text);
+    text-decoration: none;
+}
+
+.social-media {
+    
 }
