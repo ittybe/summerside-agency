@@ -37,7 +37,7 @@ body {
 }
 
 .menu-bar {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -101,6 +101,7 @@ body {
 
 .menu-sign {
     color: white;
+    cursor: pointer;
     font-size: x-large;
 }
 
