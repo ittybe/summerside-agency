@@ -1,0 +1,69 @@
+/* header */
+@media screen and (min-width: 494px) {
+    .header-wrapper {
+        background-image: url(./assets/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: bottom;   
+        background-repeat: no-repeat;
+        
+        padding: 30px 20px 300px 20px;
+        
+        position: relative;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .header-wrapper { 
+        padding: 50px 30px 500px 30px;
+    }
+    .arrow-down {
+        /* arrow  pointing into orange  */
+        bottom: 300px;
+    }
+    .menu-sign {
+        display: none;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: initial;
+        top: initial;
+        padding: initial;
+    }
+ 
+    .menu-bar::after {
+        content: none;
+    }
+
+    .menu-bar li {
+        margin: 15px;
+    }
+    
+    .menu-bar li:last-child {
+        margin: 30px;
+    }
+    
+    .menu-bar li:last-child a {
+        background-color: var(--neutral-white);
+        border-radius: 25px;
+        padding: 15px 40px;
+    }
+    
+    .menu-bar li:last-child a:link, .menu-bar li:last-child a:visited {
+        color: var(--neutral-blue);
+    }
+    
+    .menu-bar a:link, .menu-bar a:visited {
+        color: var(--neutral-white);
+        text-decoration: none;
+    }
+    
+    .menu-bar li:last-child a:hover {
+        text-decoration: none;
+        color: var(--neutral-white);
+        background-color: var(--primary-cyan-header-button);
+    }
+}
