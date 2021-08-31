@@ -195,6 +195,38 @@ body {
     margin-top: 30px;
 }
 
+.red-underline, .yellow-underline {
+    position: relative;
+}
+
+.red-underline:after, .yellow-underline:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    right: 0;
+    width: 110%;
+    height: 10px;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.red-underline:after {
+    background-color: rgba(var(--primary-red-rgb), 0.4);
+}
+
+.red-underline:hover:after {
+    background-color: rgba(var(--primary-red-rgb), 1);
+}
+
+.yellow-underline:after {
+    background-color: rgba(var(--primary-yellow-rgb), 0.4);
+}
+.yellow-underline:hover:after {
+    background-color: rgba(var(--primary-yellow-rgb), 1);
+}
+
+
 /* image text section styles */
 .image-text-section-wrapper{
     padding-top: 400px;

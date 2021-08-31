@@ -5,7 +5,9 @@
     
     /* colors */
     --primary-red: hsl(7, 99%, 70%);
+    --primary-red-rgb: 254, 120, 103;
     --primary-yellow: hsl(51, 100%, 49%);
+    --primary-yellow-rgb: 250, 212, 0;
     --primary-cyan-text: hsl(167, 40%, 24%);
     --primary-cyan-footer: #90D4C5;
     --primary-blue: hsl(198, 62%, 26%);
