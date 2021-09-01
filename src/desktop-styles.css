@@ -105,6 +105,45 @@
     .image-section-wrapper::after {
         padding-top: 75%;
     }
+
+    .image-text-section-wrapper { 
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .cherry {
+        background-image: url(./assets/desktop/image-graphic-design.jpg);
+    }
+
+    .orange {
+        background-image: url(./assets/desktop/image-photography.jpg);
+    }
+
+    .client-testimonials {
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    .client-testimonials>.title {
+        width: 100%;
+    }
+    .client-testimonial {
+        width: 33%;
+    }
+    .personal-info {
+        margin: 40px;
+    }
+    .client-testimonial img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
+@media screen and (min-width: 1024px) {
+    
+}
 
