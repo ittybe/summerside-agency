@@ -24,5 +24,15 @@ function showHideMenuHeader (){
     }
 }
 
+function removeStyleAttrMenuHeader () {
+    if (window.innerWidth >= 768) {
+        var menuBar = document.getElementsByClassName("menu-bar")[0]
+        var menuSign = document.getElementsByClassName("menu-sign")[0]
+
+        menuBar.removeAttribute("style")
+        menuSign.removeAttribute("style")
+    }
+}
 
 document.getElementsByClassName("menu-sign")[0].addEventListener("click", showHideMenuHeader);
+window.onresize = removeStyleAttrMenuHeader
